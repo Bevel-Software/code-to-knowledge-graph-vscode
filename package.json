@@ -1,0 +1,68 @@
+{
+  "name": "code-to-knowledge-graph-vscode",
+  "publisher": "bevel-software",
+  "displayName": "Code to Knowledge Graph Library Plugin",
+  "icon": "media/bevel-large-logo.png",
+  "repository": "",
+  "description": "This is an open-source alternative to the core bevel extension, if you want to use our open-source code-to-knowledge-graph java library.",
+  "version": "1.0.0",
+  "private": "true",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [],
+    "viewsContainers": {},
+    "views": {}
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run build && npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p ./tsconfig.test.json --outDir testOut",
+    "watch-tests": "tsc -p . -w --outDir testOut",
+    "pretest": "npm run compile-tests && npm run build:extension && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "build": "npm run check-types && node esbuild.js",
+    "publish:marketplace": "vsce publish && ovsx publish",
+    "publish:marketplace:prerelease": "vsce publish --pre-release && ovsx publish --pre-release"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.84.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "esbuild": "^0.25.4",
+    "@types/express": "^5.0.0",
+    "eslint": "^9.11.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.36",
+    "delay": "^6.0.0",
+    "express": "^5.1.0",
+    "uuid": "^11.1.0"
+  },
+  "files": [
+    "out",
+    "node_modules/@vscode/codicons/dist/**",
+    "media",
+    "LICENSE",
+    "NOTICE"
+  ]
+}
