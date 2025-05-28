@@ -1,7 +1,7 @@
 {
   "name": "code-to-knowledge-graph-vscode",
   "publisher": "bevel-software",
-  "displayName": "Code to Knowledge Graph Library Plugin",
+  "displayName": "Bevel LSP Interface",
   "icon": "media/bevel-large-logo.png",
   "repository": "",
   "description": "This is an open-source alternative to the core bevel extension, if you want to use our open-source code-to-knowledge-graph java library.",
