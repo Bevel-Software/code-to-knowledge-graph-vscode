@@ -3,7 +3,7 @@
   "publisher": "bevel-software",
   "displayName": "Bevel LSP Interface",
   "icon": "media/bevel-large-logo.png",
-  "repository": "",
+  "repository": "https://github.com/Bevel-Software/code-to-knowledge-graph-vscode",
   "description": "This is an open-source alternative to the core bevel extension, if you want to use our open-source code-to-knowledge-graph java library.",
   "version": "1.0.0",
   "private": "true",
@@ -11,7 +11,23 @@
     "vscode": "^1.84.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Other",
+    "Linters",
+    "Formatters",
+    "Visualization"
+  ],
+  "keywords": [
+    "code-analysis",
+    "knowledge-graph",
+    "knowledge",
+    "graph",
+    "lsp",
+    "code-intelligence",
+    "java",
+    "code-structure",
+    "static-analysis",
+    "bevel"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -36,8 +52,8 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "build": "npm run check-types && node esbuild.js",
-    "publish:marketplace": "vsce publish && ovsx publish",
-    "publish:marketplace:prerelease": "vsce publish --pre-release && ovsx publish --pre-release"
+    "publish": "vsce publish && ovsx publish",
+    "publish:prerelease": "vsce publish --pre-release && ovsx publish --pre-release"
   },
   "devDependencies": {
     "@testing-library/react": "^13.4.0",
