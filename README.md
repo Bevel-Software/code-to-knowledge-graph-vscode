@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <strong>The essential VS Code companion for <a href="https://github.com/YOUR_USERNAME/code-to-knowledge-graph">Code-to-Knowledge-Graph</a>, enabling deep code analysis by exposing LSP capabilities over HTTP.</strong>
+  <strong>The essential VS Code companion for <a href="https://github.com/bevel-software/code-to-knowledge-graph">Code-to-Knowledge-Graph</a>, enabling deep code analysis by exposing LSP capabilities over HTTP.</strong>
 </p>
 
 <p align="center">
@@ -12,12 +12,12 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=bevel-software.code-to-knowledge-graph-vscode"><img src="https://img.shields.io/visual-studio-marketplace/v/bevel-software.code-to-knowledge-graph-vscode.svg?color=blue&label=VS%20Marketplace" alt="VS Marketplace Version"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=bevel-software.code-to-knowledge-graph-vscode"><img src="https://img.shields.io/visual-studio-marketplace/i/bevel-software.code-to-knowledge-graph-vscode.svg?color=blue&label=Installs" alt="VS Marketplace Installs"></a>
   <!-- Replace YOUR_USERNAME with the actual GitHub username if the Java library is hosted there -->
-  <a href="https://github.com/bevel-software/code-to-knowledge-graph/stargazers"><img src="https://img.shields.io/github/stars/YOUR_USERNAME/code-to-knowledge-graph.svg?style=social&label=Star%20C2KG%20Library" alt="GitHub Stars for Code-to-Knowledge-Graph Library"></a>
+  <a href="https://github.com/bevel-software/code-to-knowledge-graph/"><img src="https://img.shields.io/github/stars/bevel-software/code-to-knowledge-graph.svg?style=social&label=Star%20C2KG%20Library" alt="GitHub Stars for Code-to-Knowledge-Graph Library"></a>
 </p>
 
 ---
 
-The **Bevel LSP Interface** is a VS Code extension that acts as a vital bridge between your integrated development environment and the powerful [Code-to-Knowledge-Graph Java library](https://github.com/YOUR_USERNAME/code-to-knowledge-graph). It starts a local HTTP server, allowing the Code-to-Knowledge-Graph library (or other external tools) to securely query your codebase for symbols, references, definitions, and other structural information by leveraging VS Code's built-in Language Server Protocol capabilities.
+The **Bevel LSP Interface** is a VS Code extension that acts as a vital bridge between your integrated development environment and the powerful [Code-to-Knowledge-Graph Java library](https://github.com/bevel-software/code-to-knowledge-graph). It starts a local HTTP server, allowing the Code-to-Knowledge-Graph library (or other external tools) to securely query your codebase for symbols, references, definitions, and other structural information by leveraging VS Code's built-in Language Server Protocol capabilities.
 
 This extension is can be used in tandem with the Code-to-Knowledge-Graph library to do the following on your own code:
 *   🔍 **Extract deep structural information** from your code.
@@ -67,7 +67,7 @@ The extension will be automatically activated when VS Code starts.
 
 ## 🚀 Usage
 
-This extension primarily works in the background. Its main purpose is to serve requests from the [Code-to-Knowledge-Graph Java library](https://github.com/YOUR_USERNAME/code-to-knowledge-graph).
+This extension primarily works in the background. Its main purpose is to serve requests from the [Code-to-Knowledge-Graph Java library](https://github.com/bevel-software/code-to-knowledge-graph).
 
 1.  Ensure this extension is installed and enabled in VS Code.
 2.  Open the project you want to analyze in VS Code.
@@ -96,7 +96,7 @@ If you want to contribute to or modify the Bevel LSP Interface extension itself:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/code-to-knowledge-graph-vscode.git # Or your fork
+    git clone https://github.com/bevel-software/code-to-knowledge-graph-vscode.git # Or your fork
     cd code-to-knowledge-graph-vscode
     ```
 2.  **Install dependencies:**
