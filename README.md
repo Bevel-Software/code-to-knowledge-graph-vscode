@@ -9,7 +9,6 @@
 
 <p align="center">
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg" alt="License"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=bevel-software.code-to-knowledge-graph-vscode"><img src="https://img.shields.io/visual-studio-marketplace/v/bevel-software.code-to-knowledge-graph-vscode.svg?color=blue&label=VS%20Marketplace" alt="VS Marketplace Version"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=bevel-software.code-to-knowledge-graph-vscode"><img src="https://img.shields.io/visual-studio-marketplace/i/bevel-software.code-to-knowledge-graph-vscode.svg?color=blue&label=Installs" alt="VS Marketplace Installs"></a>
   <!-- Replace YOUR_USERNAME with the actual GitHub username if the Java library is hosted there -->
   <a href="https://github.com/bevel-software/code-to-knowledge-graph/"><img src="https://img.shields.io/github/stars/bevel-software/code-to-knowledge-graph.svg?style=social&label=Star%20C2KG%20Library" alt="GitHub Stars for Code-to-Knowledge-Graph Library"></a>
